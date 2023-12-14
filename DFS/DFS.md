@@ -1,3 +1,8 @@
+# Intro
+
+DFS - Depth search algorithem is an algorithem that aim to search on both directed and undirected graphs.
+it perform a search
+
 # Pseudo code
 
 ```

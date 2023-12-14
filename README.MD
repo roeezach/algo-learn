@@ -10,10 +10,17 @@ Feel free to contribute by adding more algorithms, improving explanations, or co
 
 ## Algorithm Comparison Table
 
-| Name             | Input                                    | Output                                | Time Complexity | Problem Solving Use Cases                   | Not Ideal For                                             |
-| ---------------- | ---------------------------------------- | ------------------------------------- | --------------- | ------------------------------------------- | --------------------------------------------------------- |
-| BFS              | Graph (Adjacency List or Matrix), Source | Shortest Paths, Level Order Traversal | O(V + E)        | Shortest path finding, connected components | Unweighted graphs with many edges                         |
-| DFS              | Graph (Adjacency List or Matrix), Source | Depth-First Order                     | O(V + E)        | Connected components, cycle detection       | Shortest path finding, performance-sensitive applications |
-| Topological Sort | Directed Acyclic Graph (DAG)             | Linear Ordering of Nodes              | O(V + E)        | Dependency resolution, scheduling tasks     | Graphs with cycles or non-DAG structure                   |
+## additional Details
+
+| Algorithm    | Complexity | Task                                        | Constraints                   | Directed/Undirected | Weighted | Use Cases                                                                  |
+| ------------ | ---------- | ------------------------------------------- | ----------------------------- | ------------------- | -------- | -------------------------------------------------------------------------- |
+| BFS          | O(m+n)     | Graph traversal from point "S"              | None                          | Both                | No       | Shortest paths, connected components                                       |
+| DFS          | O(m+n)     | Graph traversal from point "S"              | Detection and completion time | Both                | No       | Cycle detection, connected components, GCC (Graph Connectivity Components) |
+| Top Sort     | O(m+n)     | Sort nodes from left to right no back edges | Acyclic graph                 | None                | No       | Dependency resolution, task scheduling                                     |
+| SCC          | O(m+n)     | Find strongly connected components          | None                          | Directed            | No       | Graph structure analysis, directed connectivity                            |
+| Kruskal      | O(mlogm)   | Minimum Spanning Tree                       | Edge weights                  | Undirected          | Yes      | Network design, clustering                                                 |
+| Prim         | O(mlogn)   | Minimum Spanning Tree                       | Edge weights                  | Undirected          | Yes      | Network design, clustering                                                 |
+| Dijkstra     | O(mlogn)   | Shortest paths from one node to all others  | No negative weights           | Both                | Yes      | Network routing, resource optimization                                     |
+| Bellman-Ford | O(nm)      | Shortest paths from one node to all others  | Negative weights allowed      | Both                | Yes      | Network routing, resource optimization                                     |
 
 Happy Learning! 🚀

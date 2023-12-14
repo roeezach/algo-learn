@@ -21,7 +21,7 @@ enqueue(Q,s) // insert node to the Queue
             do if color[v] = white // if the neighbor was not visited so he is white
             then color[v] <- grey
                  d[v] <- d[u] + 1
-                pi[v] <- u
+                 pi[v] <- u
                 enqueue(Q,v) // insert to the queue
             color[u] <- black
 ```

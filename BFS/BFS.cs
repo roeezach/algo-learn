@@ -23,7 +23,7 @@ class Graph
 
     public void BFS(int s)
     {
-        // Mark all vertices as white
+        // Mark all vertices(nodes) as white
         int[] color = new int[V];
         for (int i = 0; i < V; ++i)
         {
